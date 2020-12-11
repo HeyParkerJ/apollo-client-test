@@ -27,10 +27,6 @@ console.log(`NODE_ENV: ${env}`)
 const config = {
   context,
   entry: './index.tsx',
-  resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
-    modules: ['node_modules', '.'],
-  },
   mode: dev ? 'development' : 'production',
   output: {
     path: build,
