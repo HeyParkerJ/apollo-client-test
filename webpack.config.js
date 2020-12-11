@@ -29,6 +29,7 @@ const config = {
   entry: './index.tsx',
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
+    modules: ['node_modules'],    
     //modules: ['node_modules', '.'],
   },
   mode: dev ? 'development' : 'production',
