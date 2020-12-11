@@ -29,7 +29,7 @@ const config = {
   entry: './index.tsx',
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
-    //modules: ['node_modules', '.'],
+    modules: ['node_modules', '.'], // This is not backwards compatable in Apollo v3
   },
   mode: dev ? 'development' : 'production',
   output: {
